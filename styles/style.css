@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', Arial, sans-serif; /* Use the cartoonish font */
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+header, footer {
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: calc(100vh - 70px); /* Adjusted to consider header and footer padding */
+}
+
+section {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.soundcloud-theme {
+    background: linear-gradient(to bottom, #ff5500, #585252);
+    color: black;
+}
+
+.youtube-theme {
+    background: linear-gradient(to bottom, #ff0000, #b6b0b0);
+    color: white;
+}
+
+.soundcloud-theme iframe, .youtube-theme iframe {
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+a {
+    color: #d6d4d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right:

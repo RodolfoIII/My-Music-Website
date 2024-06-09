@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Alex III</h1>
+        <p>Music Artist</p>
+        <div class="buttons">
+            <a href="#" id="subscribe-btn" class="btn">SUBSCRIBE</a>
+            <a href="#" id="buy-beats-btn" class="btn">BUY MY BEATS</a>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about soundcloud-theme content">
+            <h2>About Me</h2>
+            <p>I'm a passionate music artist. I love creating beats and songs, and this website showcases some of my work.</p>
+        </section>
+        <section id="music" class="music soundcloud-theme content">
+            <h2>Songs</h2>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/alexalexalexalex29292929/nobela-cover?si=66189778739b41e6a9531ded38f11157&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/alexalexalexalex29292929/kendilalala?si=6fcca7cd1cce45ff8e859d81805d43ad&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <p>Listen to more of my music on <a href="https://soundcloud.com/alexalexalexalex29292929/tracks" target="_blank">SoundCloud</a>.</p>
+        </section>
+        <section id="contact" class="contact youtube-theme content">
+            <h2>Beats</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/N3K46jbPRUE?si=N9quHzfV5eo19HfC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ylhbfcDUESM?si=NkC8DRwdnye9G3cR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Listen more of my beats on <a href="https://www.youtube.com/channel/UCheK6E28FScX5i-a008LUMQ" target="_blank">YouTube</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <a href="https://www.instagram.com/alecx_iii/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCheK6E28FScX5i-a008LUMQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://soundcloud.com/alexalexalexalex29292929" target="_blank"><i class="fab fa-soundcloud"></i></a>
+        </p>
+        <p>&copy; 2024 Alex III</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('subscribe-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default action of the link
+                animateButton(this);
+            });
+
+            document.getElementById('buy-beats-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default action of the link
+                animateButton(this);
+            });
+
+            function animateButton(button) {
+                button.classList.add('animated');
+                button.innerText = 'Gotcha!';
+                setTimeout(function() {
+                    button.classList.remove('animated');
+                    button.innerText = (button.id === 'subscribe-btn') ? 'SUBSCRIBE' : 'BUY MY BEATS';
+                }, 1000); // Adjust the time as needed
+            }
+        });
+    </script>
+</body>
+</html>
